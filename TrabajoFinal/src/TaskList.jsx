@@ -2,11 +2,11 @@ import React from 'react';
 import TaskItem from './TaskItem';
 import './index.css';
 
-const TaskList = ({ tasks }) => {
+const TaskList = ({ tasks, onToggleComplete }) => {
   return (
     <div className="task-list">
       {tasks.map((task) => (
-        <TaskItem key={task.id} task={task} />
+        <TaskItem key={task.id} task={task} onToggleComplete={onToggleComplete} />
       ))}
     </div>
   );

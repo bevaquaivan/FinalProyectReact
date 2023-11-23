@@ -1,20 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css'; 
 
-const TaskItem = ({ task }) => {
-  const [completed, setCompleted] = useState(false);
-
+const TaskItem = ({ task, onToggleComplete }) => {
   const handleComplete = () => {
-    setCompleted(!completed);
-
+    onToggleComplete(task.id, !task.completed);
   };
 
   return (
-    <div className={`task-item ${completed ? 'completed' : ''}`}>
+    <div className={`task-item ${task.completed ? 'completed' : ''}`}>
       {task.name}
-      <button onClick={handleComplete}>Eliminar</button>
+      <button onClick={handleComplete}>Completar</button>
     </div>
   );
 };
 
 export default TaskItem;
+
