@@ -1,3 +1,18 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -32,101 +47,6 @@ a:hover {
   color: #535bf2;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  margin-right: 8px;
-  align-content: space-between;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-    align-content: space-between;
-  }
-}
-
-.task-form {
-  margin-top: 16px;
-  margin-bottom: 12px; 
-  padding: 10px 20px;
-  background-color:#45a049;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex; 
-  justify-content: space-between; 
-}
-
-.task-form button{
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.task-form:hover button {
-  background-color:rgb(35, 145, 145);
-}
-
-.task-form:active button {
-  background-color: #3e8e41;
-}
-
-.task-list {
-  margin-top: 16px;
-}
-
-.task-item {
-  margin-bottom: 12px; 
-  padding: 10px 20px;
-  background-color: rgb(35, 145, 145);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex; 
-  justify-content: space-between; 
-}
-
-.task-item button {
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.task-item:hover button {
-  background-color: #45a049;
-}
-
-.task-item:active button {
-  background-color: #3e8e41;
-}
 
 .task-item.completed {
   text-decoration: line-through;
@@ -134,23 +54,35 @@ button:focus-visible {
 }
 
 
-.task-form {
-  margin-top: 16px;
-  text-align: center;
-}
-
-
-.app-container {
-  padding: 16px;
-  background-color: #1a1a1a;
-  color: #fff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  max-width: 600px;
-  margin: 0 auto; 
-}
-
+/* mis stylos*/
+/* Estilos de reinicio y configuración global */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Estilos del cuerpo de la página */
+  body {
+	font-family: Verdana, sans-serif; /* Establece la fuente principal */
+	max-width: 1200px; /* Limita el ancho máximo del contenido del cuerpo */
+	margin: 40px auto; /* Establece márgenes superior e inferior y centra el contenido horizontalmente */
+	display: flex; /* Utiliza el modelo de diseño flexible */
+	justify-content: center; /* Centra el contenido horizontalmente dentro del cuerpo */
+  }
+  
+  /* Estilos del contenedor de la aplicación */
+  .app-container {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra ligera alrededor del contenedor */
+	padding: 25px; /* Agrega un relleno interno de 25 píxeles al contenedor */
+	border-radius: 20px; /* Agrega bordes redondeados al contenedor */
+	width: 700px; /* Establece el ancho del contenedor a 700 píxeles */
+	background-color:#1f618d; /* Establece el color de fondo del contenedor a un tono de rosa */
+  }
+  
+  /* Estilos del encabezado de nivel 1 */
+  h1 {
+	text-align: center; /* Centra el texto horizontalmente dentro del elemento h1 */
+	font-size: 6em; /* Establece el tamaño de la fuente del elemento h1 a 6 veces el tamaño predeterminado */
+  }
+  

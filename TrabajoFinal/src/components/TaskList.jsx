@@ -1,6 +1,6 @@
 import React from 'react';
-import TaskItem from './TaskItem';
-import './index.css';
+import TaskItem from './TaskItem'; 
+import '../style/index.css';
 
 const TaskList = ({ tasks, onToggleComplete }) => {
   return (
