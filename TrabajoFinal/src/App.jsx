@@ -1,7 +1,7 @@
-import './App.css'; 
 import React, { useState, useEffect } from 'react';
-import TaskList from "./TaskList";
-import TaskForm from "./TaskForm";
+import "./App.css" // Importa estilos CSS locales
+import TaskList from "./components/TaskList"; // Importa el componente TaskList
+import TaskForm from "./components/TaskForm"; // Importa el componente TaskForm
 
 const App = () => {
   const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -27,8 +27,8 @@ const App = () => {
   return (
     <div className="app-container">
       <h1>Lista de Tareas</h1>
+            <TaskForm addTask={addTask} />
       <TaskList tasks={tasks} onToggleComplete={handleToggleComplete} />
-      <TaskForm addTask={addTask} />
     </div>
   );
 };
