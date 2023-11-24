@@ -1,60 +1,85 @@
+h1 {
+	text-align: center;
+	max-width: 940px;
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 700;
+	margin: 40px 0;
+	text-align: center;
+  }
 
-
-   /* mis stylos mar*/
-h1{
-  max-width: 940px;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  font-weight: 700;
-  
-  margin: 40px 0;
-  text-align: center;
-}
-.task-form{
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	padding: 25px;
-	border-radius: 20px;
-	width: 650px;
-  background-color:#2471a3;
-}
-.task-list{
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	padding: 25px;
-	border-radius: 20px;
-	width: 650px;
-  background-color:#2471a3;
-}
-
-.task-item{
-  border: none;
-	font-weight: 400;
-	font-family: inherit;
-	font-size: 18px;
-	color:black;
-	width: 100%;
-  margin-left: 22px;
-	outline: none;
-  margin-top: 25px;
-
-}
-button{
-  background-color:#add8e6;
+  .task-form button.add-button {
+	background-color: #add8e6;
 	color: black;
 	padding: 10px;
-	display: flex;
-
 	border-radius: 5%;
 	transition: all 0.3s;
 	cursor: pointer;
-  margin-left: 70%;
+	margin-left: 70px;
+  }
   
+  .task-form button.add-button:hover {
+	background-color: #8ab6d6;
+  }
   
-}
-.task-item-completed{
-	
+  .task-form-completed .add-button {
 	text-decoration: line-through;
-	color:black;
-	}
-
-/*  style marisa*/
- 
+	color: #000000ee;
+  }
+  
+  .task-form,
+  .task-list {
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	padding: 25px;
+	border-radius: 20px;
+	width: 650px;
+	background-color: #2471a3;
+  }
+  
+  .task-item {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+  }
+  
+  .task-item-content {
+	width: calc(100% - 32px);
+  }
+  
+  .task-item button {
+	background-color: #add8e6;
+	color: black;
+	padding: 10px;
+	border-radius: 5%;
+	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
+	margin-left: 70px;
+  }
+  
+  .task-item button:hover {
+	background-color: #8ab6d6;
+  }
+  
+  .task-item button.completed {
+	color: #000000ee;
+	text-decoration: line-through;
+  }
+  
+  .task-form button {
+	background-color: #add8e6;
+	color: black;
+	padding: 10px;
+	border-radius: 5%;
+	transition: all 0.3s;
+	cursor: pointer;
+	margin-left: 70px;
+  }
+  
+  .task-form button:hover {
+	background-color: #8ab6d6;
+  }
+  
+  .task-form button.completed {
+	color: #000000ee;
+	text-decoration: line-through;
+  }

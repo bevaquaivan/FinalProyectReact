@@ -24,17 +24,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 16px;
+  margin: auto;
 }
 
 a {
@@ -47,42 +40,17 @@ a:hover {
   color: #535bf2;
 }
 
-
 .task-item.completed {
   text-decoration: line-through;
   color: #000000ee;
 }
 
-
-/* mis stylos*/
-/* Estilos de reinicio y configuración global */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-  }
-  
-  /* Estilos del cuerpo de la página */
-  body {
-	font-family: Verdana, sans-serif; /* Establece la fuente principal */
-	max-width: 1200px; /* Limita el ancho máximo del contenido del cuerpo */
-	margin: 40px auto; /* Establece márgenes superior e inferior y centra el contenido horizontalmente */
-	display: flex; /* Utiliza el modelo de diseño flexible */
-	justify-content: center; /* Centra el contenido horizontalmente dentro del cuerpo */
-  }
-  
-  /* Estilos del contenedor de la aplicación */
-  .app-container {
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra ligera alrededor del contenedor */
-	padding: 25px; /* Agrega un relleno interno de 25 píxeles al contenedor */
-	border-radius: 20px; /* Agrega bordes redondeados al contenedor */
-	width: 700px; /* Establece el ancho del contenedor a 700 píxeles */
-	background-color:#1f618d; /* Establece el color de fondo del contenedor a un tono de rosa */
-  }
-  
-  /* Estilos del encabezado de nivel 1 */
-  h1 {
-	text-align: center; /* Centra el texto horizontalmente dentro del elemento h1 */
-	font-size: 6em; /* Establece el tamaño de la fuente del elemento h1 a 6 veces el tamaño predeterminado */
-  }
-  
+.app-container {
+  display: block;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 20px;
+  width: 700px;
+  background-color: #1f618d;
+  margin: auto;
+}

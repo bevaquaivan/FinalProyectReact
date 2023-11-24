@@ -13,14 +13,16 @@ const TaskForm = ({ addTask }) => {
   };
 
   return (
-    <form className="task-form" onSubmit={handleSubmit}>
+    <form className={`task-form ${taskName.trim() !== '' ? 'task-form-completed' : ''}`} onSubmit={handleSubmit}>
       <input
         type="text"
         value={taskName}
         onChange={(e) => setTaskName(e.target.value)}
         placeholder="Nueva tarea"
       />
-      <button type="submit">Agregar</button>
+      <button type="submit" className="add-button">
+        Agregar
+      </button>
     </form>
   );
 };
