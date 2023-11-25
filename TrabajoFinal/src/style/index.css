@@ -22,7 +22,7 @@ h1 {
 	background-color: #8ab6d6;
   }
   
-  .task-form-completed .add-button {
+  .task-form-completed  {
 	text-decoration: line-through;
 	color: #000000ee;
   }
@@ -60,10 +60,6 @@ h1 {
 	background-color: #8ab6d6;
   }
   
-  .task-item button.completed {
-	color: #000000ee;
-	text-decoration: line-through;
-  }
   
   .task-form button {
 	background-color: #add8e6;
@@ -79,7 +75,7 @@ h1 {
 	background-color: #8ab6d6;
   }
   
-  .task-form button.completed {
+  .task-item-completed{
 	color: #000000ee;
 	text-decoration: line-through;
   }
